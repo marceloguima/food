@@ -21,7 +21,7 @@ body{
     align-items: center;
     gap: 20px;
     height: 100vh;
-    background-image:linear-gradient(to bottom, #5c0ed8, #8c31e2);
+    background-image:linear-gradient(to bottom, #7b32f0, #b06cf0);
     background-repeat: no-repeat;
     border-radius: 20px;
 }
