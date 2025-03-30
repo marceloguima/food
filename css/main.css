@@ -66,31 +66,66 @@ input:focus {
 
 /* carrinho */
 .cart {
+    display: flex;
     flex-direction: column;
     gap: 10px;
     text-align: center;
     background: #ebebeb;
-    width: 300px;
+    width: 320px;
     min-height: 200px;
     position: relative;
     border-radius: 10px;
-    padding: 5px;
+    
     display: none;
 }
 
+/* ul */
 .item {
-    display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 65px;
+    height: 70px;
     box-shadow: 1px 2px 5px #525252;
     border-radius: 10px;
     margin: 0 auto 10px;
+    
+}
+ 
+/* li */
+#cart-lista{
+    display: flex;
+    flex-direction: column;
+}
+
+#cart-lista p{
+ 
+
+}
+
+.caixa-botao{
+    width: 90px;
+    height: 30px;
+   
+    display: flex;
+    justify-content: space-around;
+    border: solid 2px #0d5004;
+    border-radius: 5px;
+}
+
+#quant-do-item{
+    height: 100%;
+    font-size: 1rem;
+    margin-top: 40px;
+
 }
 
 .item img {
     width: 60px;
+}
+
+.item span{
+    font-size: 1.2rem;
 }
 
 .total {
