@@ -25,21 +25,15 @@
                 </div>
                 <nav>
                     <div class="cart" id="cart">
+                        <h5>Meus itens</h5>
                         <div class="item">
                             <img src="../imagens/coca-cola.png" alt="" />
                             <p>coca-cola</p>
-                            <button>+</button>
-                            <button>-</button>
+                            <button><i class="fa-solid fa-plus"></i></button>
+                            <button><i class="fa-solid fa-minus"></i></button>
                             <p>R$ <span>00,00</span></p>
                         </div>
 
-                        <div class="item">
-                            <img src="../imagens/hamb-duplo.png" alt="" />
-                            <p>coca-cola</p>
-                            <button>+</button>
-                            <button>-</button>
-                            <p>R$ <span>00,00</span></p>
-                        </div>
                         <div class="total">
                             <h3>total:R$00,00</h3>
                         </div>
@@ -95,171 +89,171 @@
                     </div>
                 </div>
             </section>
-
             <section class="secao-hamburgueres" id="hamburgueres">
                 <div class="titulo-secao">
-                    <h2>Hamburgueres</h2>
+                    <h2>Hambúrgueres</h2>
                 </div>
-                <div class="card">
-                    <img src="../imagens/hamb-duplo.png" alt="" />
-                    <h3>Hambúrger duplo</h3>
+                <div class="card" id="produto-01">
+                    <img src="../imagens/hamb-duplo.png" alt="Hambúrguer Duplo" />
+                    <h3>Hambúrguer Duplo</h3>
                     <div class="preco-botao">
-                        <h3>R$22,00</h3>
-                        <button><i class="fa-solid fa-cart-plus"></i></button>
+                        <h3>R$ 22,00</h3>
+                        <button onclick="adicionarNoCarrinho('produto-01', 'Hambúrguer Duplo', 22.00)"><i class="fa-solid fa-cart-plus"></i></button>
                     </div>
                 </div>
-
-                <div class="card">
-                    <img src="../imagens/x-salada.png" alt="" />
-                    <h3>Hambúrger duplo gourmet</h3>
+            
+                <div class="card" id="produto-02">
+                    <img src="../imagens/x-salada.png" alt="X-Salada" />
+                    <h3>X-Salada</h3>
                     <div class="preco-botao">
-                        <h3>22,00</h3>
-                        <button><i class="fa-solid fa-cart-plus"></i></button>
+                        <h3>R$ 25,00</h3>
+                        <button onclick="adicionarNoCarrinho('produto-02', 'X-Salada', 25.00)"><i class="fa-solid fa-cart-plus"></i></button>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="../imagens/xtudao.png" alt="" />
-                    <h3>Hambúrger duplo gourmet</h3>
+                <div class="card" id="produto-03">
+                    <img src="../imagens/xtudao.png" alt="X-Tudão" />
+                    <h3>X-Tudão</h3>
                     <div class="preco-botao">
-                        <h3>22,00</h3>
-                        <button><i class="fa-solid fa-cart-plus"></i></button>
+                        <h3>R$ 30,00</h3>
+                        <button onclick="adicionarNoCarrinho('produto-03', 'X-Tudão', 30.00)"><i class="fa-solid fa-cart-plus"></i></button>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="../imagens/combo-x-salada.png" alt="" />
-                    <h3>Hambúrger duplo gourmet</h3>
+                <div class="card" id="produto-04">
+                    <img src="../imagens/combo-x-salada.png" alt="Combo X-Salada" />
+                    <h3>Combo X-Salada</h3>
                     <div class="preco-botao">
-                        <h3>22,00</h3>
-                        <button><i class="fa-solid fa-cart-plus"></i></button>
+                        <h3>R$ 35,00</h3>
+                        <button onclick="adicionarNoCarrinho('produto-04', 'Combo X-Salada', 35.00)"><i class="fa-solid fa-cart-plus"></i></button>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="../imagens/hamburger-frango.png" alt="" />
-                    <h3>Hambúrger duplo gourmet</h3>
+                <div class="card" id="produto-05">
+                    <img src="../imagens/hamburger-frango.png" alt="Hambúrguer de Frango" />
+                    <h3>Hambúrguer de Frango</h3>
                     <div class="preco-botao">
-                        <h3>22,00</h3>
-                        <button><i class="fa-solid fa-cart-plus"></i></button>
+                        <h3>R$ 23,00</h3>
+                        <button onclick="adicionarNoCarrinho('produto-05', 'Hambúrguer de Frango', 23.00)"><i class="fa-solid fa-cart-plus"></i></button>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="../imagens/combo-hamb-cheddar.png" alt="" />
-                    <h3>Hambúrger duplo gourmet</h3>
+                <div class="card" id="produto-06">
+                    <img src="../imagens/combo-hamb-cheddar.png" alt="Combo Hambúrguer Cheddar" />
+                    <h3>Combo Hambúrguer Cheddar</h3>
                     <div class="preco-botao">
-                        <h3>22,00</h3>
-                        <button><i class="fa-solid fa-cart-plus"></i></button>
+                        <h3>R$ 38,00</h3>
+                        <button onclick="adicionarNoCarrinho('produto-06', 'Combo Hambúrguer Cheddar', 38.00)"><i class="fa-solid fa-cart-plus"></i></button>
                     </div>
                 </div>
             </section>
-
+            
             <section class="secao-bebidas" id="bebidas">
                 <div class="titulo-secao">
                     <h2>Bebidas</h2>
                 </div>
-                <div class="card">
-                    <img src="../imagens/coca-cola.png" alt="" />
-                    <h3>Hambúrger duplo</h3>
+                <div class="card" id="produto-07">
+                    <img src="../imagens/coca-cola.png" alt="Coca-Cola" />
+                    <h3>Coca-Cola</h3>
                     <div class="preco-botao">
-                        <h3>R$22,00</h3>
-                        <button><i class="fa-solid fa-cart-plus"></i></button>
+                        <h3>R$ 8,00</h3>
+                        <button onclick="adicionarNoCarrinho('produto-07', 'Coca-Cola', 8.00)"><i class="fa-solid fa-cart-plus"></i></button>
                     </div>
                 </div>
-
-                <div class="card">
-                    <img src="../imagens/suco-goiaba.png" alt="" />
-                    <h3>Hambúrger duplo gourmet</h3>
+            
+                <div class="card" id="produto-08">
+                    <img src="../imagens/suco-goiaba.png" alt="Suco de Goiaba" />
+                    <h3>Suco de Goiaba</h3>
                     <div class="preco-botao">
-                        <h3>22,00</h3>
-                        <button><i class="fa-solid fa-cart-plus"></i></button>
+                        <h3>R$ 10,00</h3>
+                        <button onclick="adicionarNoCarrinho('produto-08', 'Suco de Goiaba', 10.00)"><i class="fa-solid fa-cart-plus"></i></button>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="../imagens/suco-maracuja.png" alt="" />
-                    <h3>Hambúrger duplo gourmet</h3>
+                <div class="card" id="produto-09">
+                    <img src="../imagens/suco-maracuja.png" alt="Suco de Maracujá" />
+                    <h3>Suco de Maracujá</h3>
                     <div class="preco-botao">
-                        <h3>22,00</h3>
-                        <button><i class="fa-solid fa-cart-plus"></i></button>
+                        <h3>R$ 10,00</h3>
+                        <button onclick="adicionarNoCarrinho('produto-09', 'Suco de Maracujá', 10.00)"><i class="fa-solid fa-cart-plus"></i></button>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="../imagens/suco-morango.png" alt="" />
-                    <h3>Hambúrger duplo gourmet</h3>
+                <div class="card" id="produto-10">
+                    <img src="../imagens/suco-morango.png" alt="Suco de Morango" />
+                    <h3>Suco de Morango</h3>
                     <div class="preco-botao">
-                        <h3>22,00</h3>
-                        <button><i class="fa-solid fa-cart-plus"></i></button>
+                        <h3>R$ 10,00</h3>
+                        <button onclick="adicionarNoCarrinho('produto-10', 'Suco de Morango', 10.00)"><i class="fa-solid fa-cart-plus"></i></button>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="../imagens/suco-laranja.png" alt="" />
-                    <h3>Hambúrger duplo gourmet</h3>
+                <div class="card" id="produto-11">
+                    <img src="../imagens/suco-laranja.png" alt="Suco de Laranja" />
+                    <h3>Suco de Laranja</h3>
                     <div class="preco-botao">
-                        <h3>22,00</h3>
-                        <button><i class="fa-solid fa-cart-plus"></i></button>
+                        <h3>R$ 9,00</h3>
+                        <button onclick="adicionarNoCarrinho('produto-11', 'Suco de Laranja', 9.00)"><i class="fa-solid fa-cart-plus"></i></button>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="../imagens/suco-abacaxi.png" alt="" />
-                    <h3>Hambúrger duplo gourmet</h3>
+                <div class="card" id="produto-12">
+                    <img src="../imagens/suco-abacaxi.png" alt="Suco de Abacaxi" />
+                    <h3>Suco de Abacaxi</h3>
                     <div class="preco-botao">
-                        <h3>22,00</h3>
-                        <button><i class="fa-solid fa-cart-plus"></i></button>
+                        <h3>R$ 9,00</h3>
+                        <button onclick="adicionarNoCarrinho('produto-12', 'Suco de Abacaxi', 9.00)"><i class="fa-solid fa-cart-plus"></i></button>
                     </div>
                 </div>
             </section>
-
+            
             <section class="secao-sobremesas" id="sobremesas">
                 <div class="titulo-secao">
                     <h2>Sobremesas</h2>
                 </div>
-                <div class="card">
-                    <img src="../imagens/mousse-maracuja.png" alt="" />
-                    <h3>Hambúrger duplo</h3>
+                <div class="card" id="produto-13">
+                    <img src="../imagens/mousse-maracuja.png" alt="Mousse de Maracujá" />
+                    <h3>Mousse de Maracujá</h3>
                     <div class="preco-botao">
-                        <h3>R$22,00</h3>
-                        <button><i class="fa-solid fa-cart-plus"></i></button>
+                        <h3>R$ 12,00</h3>
+                        <button onclick="adicionarNoCarrinho('produto-13', 'Mousse de Maracujá', 12.00)"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+            
+                <div class="card" id="produto-14">
+                    <img src="../imagens/torta-morango.png" alt="Torta de Morango" />
+                    <h3>Torta de Morango</h3>
+                    <div class="preco-botao">
+                        <h3>R$ 15,00</h3>
+                        <button onclick="adicionarNoCarrinho('produto-14', 'Torta de Morango', 15.00)"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+                <div class="card" id="produto-15">
+                    <img src="../imagens/sorvete-sabores.png" alt="Sorvete de Sabores" />
+                    <h3>Sorvete de Sabores</h3>
+                    <div class="preco-botao">
+                        <h3>R$ 13,00</h3>
+                        <button onclick="adicionarNoCarrinho('produto-15', 'Sorvete de Sabores', 13.00)"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+                <div class="card" id="produto-16">
+                    <img src="../imagens/mousse-morango.png" alt="Mousse de Morango" />
+                    <h3>Mousse de Morango</h3>
+                    <div class="preco-botao">
+                        <h3>R$ 12,00</h3>
+                        <button onclick="adicionarNoCarrinho('produto-16', 'Mousse de Morango', 12.00)"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+                <div class="card" id="produto-17">
+                    <img src="../imagens/mix-frutas.png" alt="Mix de Frutas" />
+                    <h3>Mix de Frutas</h3>
+                    <div class="preco-botao">
+                        <h3>R$ 14,00</h3>
+                        <button onclick="adicionarNoCarrinho('produto-17', 'Mix de Frutas', 14.00)"><i class="fa-solid fa-cart-plus"></i></button>
+                    </div>
+                </div>
+                <div class="card" id="produto-18">
+                    <img src="../imagens/milkshak-cereja.png" alt="Milkshake de Cereja" />
+                    <h3>Milkshake de Cereja</h3>
+                    <div class="preco-botao">
+                        <h3>R$ 16,00</h3>
+                        <button onclick="adicionarNoCarrinho('produto-18', 'Milkshake de Cereja', 16.00)"><i class="fa-solid fa-cart-plus"></i></button>
                     </div>
                 </div>
 
-                <div class="card">
-                    <img src="../imagens/torta-morango.png" alt="" />
-                    <h3>Hambúrger duplo gourmet</h3>
-                    <div class="preco-botao">
-                        <h3>22,00</h3>
-                        <button><i class="fa-solid fa-cart-plus"></i></button>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../imagens/sorvete-sabores.png" alt="" />
-                    <h3>Hambúrger duplo gourmet</h3>
-                    <div class="preco-botao">
-                        <h3>22,00</h3>
-                        <button><i class="fa-solid fa-cart-plus"></i></button>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../imagens/mousse-morango.png" alt="" />
-                    <h3>Hambúrger duplo gourmet</h3>
-                    <div class="preco-botao">
-                        <h3>22,00</h3>
-                        <button><i class="fa-solid fa-cart-plus"></i></button>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../imagens/mix-frutas.png" alt="" />
-                    <h3>Hambúrger duplo gourmet</h3>
-                    <div class="preco-botao">
-                        <h3>22,00</h3>
-                        <button><i class="fa-solid fa-cart-plus"></i></button>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../imagens/milkshak-cereja.png" alt="" />
-                    <h3>Hambúrger duplo gourmet</h3>
-                    <div class="preco-botao">
-                        <h3>22,00</h3>
-                        <button><i class="fa-solid fa-cart-plus"></i></button>
-                    </div>
-                </div>
-            </section>
+         
         </div>
         <script src="../scripts/cart.js"></script>
     </body>

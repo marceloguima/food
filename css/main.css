@@ -5,8 +5,8 @@
 }
 
 body {
-    background: #ebebeb;
     font-family: poppins, sans-serif;
+    background: #dfdfdf;
 }
 
 .container {
@@ -32,7 +32,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-   
+
     padding: 20px;
 }
 
@@ -65,19 +65,20 @@ input:focus {
 }
 
 /* carrinho */
-.cart{
+.cart {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
     background: #ebebeb;
-    width: 280px;
+    width: 300px;
     min-height: 200px;
     position: relative;
     border-radius: 10px;
     padding: 5px;
     display: none;
-    
-   
 }
 
-.item{
+.item {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -86,14 +87,13 @@ input:focus {
     box-shadow: 1px 2px 5px #525252;
     border-radius: 10px;
     margin: 0 auto 10px;
-
 }
 
-.item img{
+.item img {
     width: 60px;
 }
 
-.total{
+.total {
     text-align: center;
 }
 
@@ -136,11 +136,7 @@ a {
 section {
     width: 95%;
     padding: 10px;
-   
-    
 }
-
-
 
 .ofertas {
     margin: 10px auto;
@@ -231,16 +227,18 @@ button i {
     color: #0d5004;
 }
 
-.secao-hamburgueres, .secao-bebidas,  .secao-sobremesas{
+.secao-hamburgueres,
+.secao-bebidas,
+.secao-sobremesas {
     width: 100%;
     display: grid;
-    grid-template-columns:1fr  1fr 1fr;
-    grid-template-rows: 20px 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20px 1fr 1fr;
     row-gap: 30px;
     justify-items: center;
 }
 
-.titulo-secao{
+.titulo-secao {
     grid-column: 1/4;
 }
 
@@ -251,13 +249,15 @@ button i {
 }
 
 @media (max-width: 450px) {
-.secao-hamburgueres, .secao-bebidas, .secao-sobremesas {
+    .secao-hamburgueres,
+    .secao-bebidas,
+    .secao-sobremesas {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows:20px 1fr 1fr 1fr;
+        grid-template-rows: 20px 1fr 1fr 1fr;
         column-gap: -10px;
     }
 
-    .titulo-secao{
+    .titulo-secao {
         grid-column: 1/3;
     }
 
