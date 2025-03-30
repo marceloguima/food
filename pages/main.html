@@ -19,14 +19,30 @@
                     <form action="">
                         <input type="text" placeholder="Pesquisar..." />
                     </form>
-                    <button>
+                    <button id="mostra-cart" onclick="mostrarCart()">
                         <span>2</span><i class="fa-solid fa-cart-plus"></i>
                     </button>
                 </div>
                 <nav>
+                    <div class="cart" id="cart">
+                        <div class="item">
+                            <img src="../imagens/coca-cola.png" alt="" />
+                            <p>coca-cola</p>
+                            <button>+</button>
+                            <button>-</button>
+                            <p>R$ <span>00,00</span></p>
+                        </div>
 
-                    <div class="cart">
-                        
+                        <div class="item">
+                            <img src="../imagens/hamb-duplo.png" alt="" />
+                            <p>coca-cola</p>
+                            <button>+</button>
+                            <button>-</button>
+                            <p>R$ <span>00,00</span></p>
+                        </div>
+                        <div class="total">
+                            <h3>total:R$00,00</h3>
+                        </div>
                     </div>
                     <ul>
                         <li>
@@ -245,5 +261,6 @@
                 </div>
             </section>
         </div>
+        <script src="../scripts/cart.js"></script>
     </body>
 </html>
