@@ -113,10 +113,14 @@ input:focus {
     border-radius: 5px;
 }
 
+.caixa-botao p{
+    display: flex;
+    align-items: center;
+}
+
 #quant-do-item{
-    height: 100%;
     font-size: 1rem;
-    margin-top: 40px;
+  
 
 }
 

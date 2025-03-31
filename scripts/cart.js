@@ -79,8 +79,8 @@ function aumentarQuantidade(codigo) {
 
 function diminuirQuantidade(codigo) {
     let item = itensCart.find((item) => item.codigo === codigo);
-    if (item && item.quantidade > 1) {
+    if (item && item.quantidade > 0) {
         item.quantidade--;
         atualizarCart();
-    }
+    }  
 }
