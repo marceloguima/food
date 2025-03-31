@@ -73,11 +73,16 @@ input:focus {
     background: #ebebeb;
     width: 320px;
     min-height: 200px;
-    position: relative;
+    position: absolute;
+    top: 100px;   
+   
     border-radius: 10px;
-    
+    z-index: 0;
     display: none;
+    transition: right 0.9s ease-in-out;
 }
+
+
 
 /* ul */
 .item {
@@ -139,6 +144,8 @@ input:focus {
 nav {
     height: 80px;
     margin-top: 10px;
+    display: flex;
+    justify-content: end;
 }
 
 nav ul {

@@ -3,12 +3,14 @@ const divCart = document.querySelector(".cart");
 const ulcart = document.getElementById("cart-lista");
 const Total = document.getElementById("total");
 const QuantidadeCart = document.getElementById("quantidade");
+let mensagem = document.getElementById("titulo-cart")
 
 let itensCart = [];
 
 function mostrarCart() {
     if (divCart.style.display === "flex") {
         divCart.style.display = "none";
+        
     } else {
         divCart.style.display = "flex";
     }
@@ -67,6 +69,7 @@ function atualizarCart() {
 
     spanTotal.textContent = `${total.toFixed(2)}`;
     QuantidadeCart.textContent = quantidadeTotal;
+   
 }
 
 function aumentarQuantidade(codigo) {
